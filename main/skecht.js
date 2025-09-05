@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const diminuiFonteBotao = document.getElementById('diminuir-fonte');
     const alternaContraste = document.getElementById('alterna-contraste');
     const reiniciarFonte = document.getElementById('reinicia-fonte');
+    const alternaFundo = document.getElementById('alterna-fundo');
     let messageFonte = document.getElementById('aviso-fonte');
     let tamanhoAtualFonte = 1;
-    let imagemFundo = true;
     aumentaFonteBotao.addEventListener('click', function(){
         tamanhoAtualFonte += 0.1;
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`
@@ -31,12 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }else{messageFonte.textContent = `Tamanho diminuido para ${tamanhoAtualFonte}`}
     })
     alternaContraste.addEventListener('click', function(){
-        document.body.classList.toggle('alto-contraste')
+        document.body.classList.toggle('alto-contraste');
     })
     reiniciarFonte.addEventListener('click', function(){
         tamanhoAtualFonte = 1;
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`
         messageFonte.textContent = "";
+    })
+    alternaFundo.addEventListener('click', function(){
+        document.querySelector('main').classList.toggle('sem-fundo');
     })
 })
 ScrollReveal().reveal('#Home', { delay: 500 });

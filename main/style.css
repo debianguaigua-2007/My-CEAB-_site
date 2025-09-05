@@ -19,15 +19,37 @@
     background: gold;
     border-radius: 10px;
 }
+.itens li:hover{
+    background: #00a0a0;
+}
 .itens a {
     color: #000000;
     font-weight: bold;
 }
-.prin {
-    background: url();
+#Home {
     align-items: center;
     text-align: left;
     display: flex;
+    background-image: url('/imagens/fundoDivInf.jpg');
+    background-size: cover;
+}
+#inf{
+    color: snow;
+    font-weight: 300;
+    border-color: #000000;
+}
+.sem-fundo #Home{
+    align-items: center;
+    text-align: left;
+    display: flex;
+    background: #ffffff;
+}
+.alto-contraste .sem-fundo #Home, .alto-contraste .sem-fundo #inf{
+    background: #000000;
+    color: #ffffff;
+}
+.sem-fundo #inf{
+    color: #000000;
 }
 #secun {
     background: #f0f0f0;
@@ -37,9 +59,9 @@
     justify-content: left;
 }
 .container {
-    height: 100vh;
+    height: 120vh;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 85%;
 }
 .alto-contraste {
     background: var(--high-contrast-back);
@@ -59,4 +81,42 @@
     border-color: #00a0ff;
     border-radius: 10px;
     padding: 5px;
+}
+.fw-bold:hover {
+    background: #00a0a0;
+    border-color: #00a0a0;
+}
+.fw-bold:active {
+    background: #d00000;
+    border-color: #d00000;
+}
+.link {
+    background: var(--high-contrast-link);
+    color: var(--high-contrast-back);
+    font-weight: bold;
+    padding: 3px;
+}
+.link:hover{
+    background: #00a0a0;
+}
+.rating {
+  display: flex;
+  align-items: center;
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  font-size: 2rem;
+  color: #ddd;
+  cursor: pointer;
+  margin: 0 0.1rem;
+}
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: gold;
+}
+#list input{
+  display: flex;
 }
