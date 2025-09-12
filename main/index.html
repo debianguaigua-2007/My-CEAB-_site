@@ -30,6 +30,7 @@
             </div>
         </nav>
         <div>
+            <img src=""/>
             <h1 class="title">O Colegio Estadual Ambrosio Bini</h1>
             <p class="text">Um site onde você pode obter informações desta escola, que podem ser úteis ao momento de
             matricular aos estudantes.</p>
@@ -79,8 +80,7 @@
                     pegar durante a faculdade.</p>
                     <h2 class="title"><strong>A nossa historia:</strong></h2>
                     <p class="text">O nome do colégio vem do fundador, Ambrósio Bini, que além de fundar a escola, foi
-                    também o
-                    prefeito do municipio de Almirante Tamandaré durante dois mandatos; a escola em si esteve
+                    também o prefeito do municipio de Almirante Tamandaré durante dois mandatos; a escola em si esteve
                     interditada durante um tempo,
                     mas em 2012 foi reparada e colocada em funcionamento outra vez, esta vez funcionando até a data
                     atual;
@@ -108,8 +108,23 @@
                 <option>Populares</option>
                 <option>Pouco conhecidos</option>
             </select>
+            <select>
+                <option>Todos</option>
+                <option>Noticias</option>
+                <option>Eventos</option>
+                <option>Provas e vestibulares</option>
+                <option>Curiosidades</option>
+            </select>
             <div class="buzon">
-
+                <ul class="newspaper">
+                    <li class="Noticias"><h2>Haverá sistemas de ar acondicionado na escola</h2><p><em>12 de setembro de 2025</em></p><p>Estão sendo implementadas novos sistemas de ar
+                        acondicionado para melhorar o conforto dos alunos nas salas de aula, o ar acondicionado irá manter as 
+                        salas frescas no verão e proporcionará calefação no inverno, aumentando a comodidade nos estudos.</p></li>
+                    <li class="Eventos"><h2>Está pronto para o ENEM?</h2><p><em>8 de setembro de 2025</em></p><p></p></li>
+                    <li class="Noticias"><h2>Nova faixa de segurança é colocada na escola</h2><p><em>1 de setembro de 2025</em></p>
+                        <p>Uma faixa elevada de segurança foi colocada frente à escola na rua, isto foi em razão de aumentar a segurança
+                        em razão da escola estar numa rua principal.</p></li>
+                </ul>
             </div>
         </section>
         
@@ -119,9 +134,12 @@
             <p class="text">Quer resolver dúvidas, ver como matricular seus filhos, ou saber mais acerca da escola, entre em contato.</p>
                 <form>
                     <fieldset>
+                        <label>Nome completo</label>
                         <input type="text" placeholder="Inserir nome" title="Use somente letras" required />
-                        <input type="email" placeholder="Inserir Email" required />
-                        <input type="tel" placeholder="+XX(XX)XXXXX-XXXX" title="Use somente números"/>
+                        <label>Correio Eletronico (Email)</label>
+                        <input type="email" placeholder="nomedeusuario@site.dominio" value size="25" required />
+                        <label>Numero de telefone</label>
+                        <input type="tel" placeholder="+XX(XX)XXXXX-XXXX" title="Use somente números" required/>
                     </fieldset>
                     <fieldset>
                         <p>A que horário você vai ficar disponivel?</p>
@@ -145,7 +163,7 @@
             <form>
                 <fieldset>
                     <label>Qual é a sua identificação</label>
-                    <input type="email" title="Insira seu email" placeholder="nome.sobrenome@escola.pr.gov.br" required/>
+                    <input type="email" title="Insira seu email" placeholder="nome.sobrenome@escola.pr.gov.br" value size="30" required/>
                 </fieldset>
                 <fieldset>
                     <label>Como foi a experiência:</label>
