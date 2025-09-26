@@ -44,4 +44,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 ScrollReveal().reveal('#Home', { delay: 500 });
 ScrollReveal().reveal('#News', { delay: 500 });
+ScrollReveal().reveal('#Tools', { delay: 500 });
 ScrollReveal().reveal('#Contact', { delay: 500 });
